@@ -1,5 +1,6 @@
-require "diff_set/version"
+require 'diff_set/version'
+require 'diff_set/diff_set_ext'
 
 module DiffSet
-  # Your code goes here...
+  
 end
