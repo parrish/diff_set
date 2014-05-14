@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = DiffSet::VERSION
   spec.authors       = ['Michael Parrish']
   spec.email         = ['michael@zooniverse.org']
-  spec.summary       = ''
+  spec.summary       = 'DiffSet contains a collection of data structures optimized to perform partial set subtractions'
   spec.description   = ''
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/parrish/diff_set'
   spec.license       = 'MIT'
   
   spec.files         = `git ls-files -z`.split("\x0")
