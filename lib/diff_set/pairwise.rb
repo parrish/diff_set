@@ -1,17 +1,11 @@
 module DiffSet
   module Pairwise
-    def self.included(klass)
-      klass.class_eval do
-        alias_method :_c_subtract, :subtract
-        def subtract(set, limit)
-          _in_pairs _c_subtract(set, 2 * limit)
-        end
-        
-        alias_method :_c_sample, :sample
-        def sample(limit)
-          _in_pairs _c_sample(2 * limit)
-        end
-      end
+    def subtract(set, limit)
+      _in_pairs super(set, 2 * limit)
+    end
+    
+    def sample(limit)
+      _in_pairs super(2 * limit)
     end
     
     protected
